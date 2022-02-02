@@ -28,7 +28,7 @@ class ArtistRequest extends FormRequest
         return [
                
             'name' => 'required',
-            'image' => 'required',
+            'image' => 'required|mimes:jpeg,jpg,png',
           
         ];
     }
